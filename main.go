@@ -13,7 +13,6 @@ import (
 	"github.com/rikurunico/go-restfull-api/helper"
 	"github.com/rikurunico/go-restfull-api/repository"
 	"github.com/rikurunico/go-restfull-api/service"
-
 )
 
 func main() {
@@ -32,7 +31,7 @@ func main() {
 	router.GET("/api/categories", categoryController.FindAll)
 
 	server := http.Server{
-		Addr:    "localhost:3000",
+		Addr:    "0.0.0.0:3000",
 		Handler: router,
 	}
 
